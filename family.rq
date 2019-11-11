@@ -1,0 +1,9 @@
+PREFIX : <http://dfki.de/voc#>
+
+SELECT ?z
+WHERE {
+  { ?x :sister ?y .
+    ?y :name ?z . }
+  UNION
+  { ?a ?s ?b .
+    ?m ?n ?z . } }
